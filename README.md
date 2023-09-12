@@ -20,3 +20,5 @@
 
 
 ```
+- Once added db config , go to src folder from terminal and execute below command , make sure MYSQL conenction is on.
+    - `npx sequelize db:create`
