@@ -1,0 +1,1 @@
+const {cityRepository} = require('../repository/index');
