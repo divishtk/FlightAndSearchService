@@ -84,7 +84,8 @@ const get = async (req, resp) => {
 
 const getAll = async (req,resp)=>{
     try {
-        const response = await cityService.getAllCities();
+        console.log(req.params)
+        const response = await cityService.getAllCities(req.query);
         return resp.status(200).json({
             data: response,
             success: true,
@@ -94,6 +95,7 @@ const getAll = async (req,resp)=>{
 
 
     } catch (error) {
+        console.log(error)
         return resp.status(500).json({
             data: {},
             success: false,
